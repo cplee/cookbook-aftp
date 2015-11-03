@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+
+    DocumentRoot /opt/aftp/app
+
+    <Directory />
+    Options FollowSymLinks
+    AllowOverride None
+    </Directory>
+
+    <Directory /opt/aftp/app/>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    allow from all
+    </Directory>
+
+    LogLevel warn
+</VirtualHost>
