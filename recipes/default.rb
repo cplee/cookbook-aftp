@@ -12,7 +12,7 @@ end
 package 'git'
 
 git '/opt/aftp' do
-  repository "https://github.com/#{node[:aftp][:git_repo]}.git"
-  revision node[:aftp][:git_commit]
+  repository "https://github.com/#{node['aftp']['git_repo']}.git"
+  revision node['aftp']['git_commit']
   action :sync
 end
