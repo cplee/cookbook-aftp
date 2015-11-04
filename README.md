@@ -9,6 +9,12 @@ The following attributes in the `aftp` namespace can be used to control the cook
 git_repo | The GitHub repo to pull from | String | "cplee/aftp"
 git_commit | The commit id (branch,tag,sha) to use | String | "master"
 
+# Running 
+To run locally, execute: `kitchen converge`
+
+You can then login to explore the guest:  `kitchen login`
+
+
 # Testing
 
 **Prerequisite** -  ChefDK must be [installed](https://docs.chef.io/install_dk.html).
