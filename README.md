@@ -4,12 +4,15 @@ This cookbook installs Apache HTTPD and configures a static site from a GitHub r
 # Attributes
 The following attributes in the `aftp` namespace can be used to control the cookbook:
 
-** Attribute ** | **Description** | **Type** | **Default**
-----------------|-----------------|----------|------------
+**Attribute** | **Description** | **Type** | **Default**
+--------------|-----------------|----------|------------
 git_repo | The GitHub repo to pull from | String | "cplee/aftp"
 git_commit | The commit id (branch,tag,sha) to use | String | "master"
 
 # Testing
+
+**Prerequisite** -  ChefDK must be [installed](https://docs.chef.io/install_dk.html).
+
 The included [Rakefile](Rakefile) will execute static analysis with `RuboCop` and `Foodcritic`, unit tests with `ChefSpec` and integration tests with `Test Kitchen` with `ServerSpec`
 
 To execute just the tests without running `Test Kitchen`, run:
