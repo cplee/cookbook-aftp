@@ -8,4 +8,5 @@ group :development do
   gem 'chef'
   gem 'chefspec'
   gem 'rake'
+  gem 'rubocop'
 end
