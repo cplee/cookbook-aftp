@@ -34,4 +34,4 @@ chef exec rake full
 ```
 
 [travis-url]: http://travis-ci.org/cplee/cookbook-aftp
-[travis-image]: http://img.shields.io/travis/cplee/cookbook-aftp?style=flat
+[travis-image]: http://img.shields.io/travis/cplee/cookbook-aftp.svg?style=flat
