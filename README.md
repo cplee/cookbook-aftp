@@ -1,4 +1,5 @@
 # Overview
+[![Build Status][travis-image]][travis-url]
 This cookbook installs Apache HTTPD and configures a static site from a GitHub repo.
 
 # Attributes
