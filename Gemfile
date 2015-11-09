@@ -9,4 +9,5 @@ group :development do
   gem 'chefspec'
   gem 'rake'
   gem 'rubocop'
+  gem 'foodcritic'
 end
