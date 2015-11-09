@@ -33,3 +33,6 @@ To execute all tests including the `Test Kitchen` integration tests, run:
 ```
 chef exec rake full
 ```
+
+[travis-url]: http://travis-ci.org/cplee/cookbook-aftp
+[travis-image]: http://img.shields.io/travis/cplee/cookbook-aftp?style=flat
