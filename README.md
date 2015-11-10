@@ -1,13 +1,5 @@
 # Overview [![Build Status][travis-image]][travis-url]
-This cookbook installs Apache HTTPD and configures a static site from a GitHub repo.
-
-# Attributes
-The following attributes in the `aftp` namespace can be used to control the cookbook:
-
-**Attribute** | **Description** | **Type** | **Default**
---------------|-----------------|----------|------------
-git_repo | The GitHub repo to pull from | String | "cplee/aftp"
-git_commit | The commit id (branch,tag,sha) to use | String | "master"
+This cookbook installs Jenkins with a sample job
 
 # Running 
 To run locally, execute: `kitchen converge`

@@ -10,4 +10,5 @@ group :development do
   gem 'rake'
   gem 'rubocop'
   gem 'foodcritic'
+  gem 'busser-rspec'
 end

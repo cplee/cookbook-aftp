@@ -1,18 +1,20 @@
+include_recipe 'jenkins::java'
+include_recipe 'jenkins::master'
 
-httpd_service 'default' do
-  action [:create, :start]
+xml = File.join(Chef::Config[:file_cache_path], 'hw-config.xml')
+
+# You could also use a `cookbook_file` or pure `file` resource to generate
+# content at this path.
+template xml do
+  source 'hw-config.xml.erb'
 end
 
-httpd_config 'aftp' do
-  source 'aftp.cnf.erb'
-  notifies :restart, 'httpd_service[default]'
-  action :create
+# Create a jenkins job (default action is `:create`)
+jenkins_job 'hello-world' do
+  config xml
 end
 
-package 'git'
-
-git '/opt/aftp' do
-  repository "https://github.com/#{node['aftp']['git_repo']}.git"
-  revision node['aftp']['git_commit']
-  action :sync
-end
+### Compiler and source packages for testing
+include_recipe 'build-essential::default'
+package 'libxml2-devel'
+package 'libxslt-devel'
