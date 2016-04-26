@@ -6,5 +6,8 @@ description 'Installs/Configures Jenkins with simple job'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version '0.1.0'
 
+issues_url 'https://github.com/cplee/cookbook-aftp'
+source_url 'https://github.com/cplee/cookbook-aftp/issues'
+
 depends 'jenkins', '~> 2.4.1'
 depends 'build-essential', '~>2.2.4'
