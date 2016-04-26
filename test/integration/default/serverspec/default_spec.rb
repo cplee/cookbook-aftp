@@ -2,11 +2,11 @@ require 'serverspec'
 
 set :backend, :exec
 
-describe package('jenkins')do
+describe package('jenkins') do
   it { should be_installed }
 end
 
-describe package('java-1.7.0-openjdk')do
+describe package('java-1.7.0-openjdk') do
   it { should be_installed }
 end
 
